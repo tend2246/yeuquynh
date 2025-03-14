@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Gửi Người Yêu</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+<body>
+    <audio controls autoplay>
+        <source src="nhac.mp3"type="audio/mp3">
+    </audio>
+
+    <div class="container">
+        <div class="envelope" id="envelope" onclick="toggleLetter()">
+            <img src="thu.png" alt="Phong thư" style="width: 400px; height: auto;">
+        </div>
+        <div class="letter" id="letter">
+            <img src="bucthuu.png" alt="Lá thư" style="width: 100%; height: auto;">
+            <p>Chút lời nhắn anh muốn dành tới em...</p>
+            <button onclick="toggleLetter()">Đóng</button>
+        </div>
+    </div>
+    <div class="photo-page" id="photoPage" style="display: none;">
+        <h2>Ảnh của chúng ta</h2>
+        <img src="your-photo.jpg" alt="Ảnh của bạn và người yêu" />
+        <button onclick="goBack()">Quay lại</button>
+    </div>
+    <script src="func.js"></script>
+</body>
+</html>

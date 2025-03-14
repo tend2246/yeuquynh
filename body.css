@@ -1,0 +1,44 @@
+
+body {
+        font-family: Arial, sans-serif;
+        background-image: url('nen.jpg'); /* Đường dẫn đến hình ảnh nền */
+        background-size: cover; /* Để hình ảnh phủ kín toàn bộ trang */
+        background-position: center; /* Để hình ảnh nằm ở giữa */
+        text-align: center;
+}
+
+.container {
+    display: flex; /* Sử dụng flexbox để căn giữa */
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    height: 100vh; /* Chiều cao của container bằng chiều cao của viewport */
+}
+
+.envelope {
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.letter {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 100px; /* Tăng padding để lá thư lớn hơn */
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 400px; /* Đặt chiều rộng cho lá thư */
+    height: auto; /* Chiều cao tự động */
+    font-size: 20px; /* Tăng kích thước chữ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Thêm bóng cho lá thư */
+}
+
+.photo-page {
+    margin-top: 50px;
+}
+
+#letterContent {
+    font-size: 20px; /* Kích thước chữ */
+    line-height: 1.5; /* Khoảng cách giữa các dòng */
+    margin-bottom: 20px; /* Khoảng cách dưới cùng */
+}

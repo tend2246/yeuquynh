@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Gallery</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: pink;
+            background-image: url('nen3.jpg'); /* Thay bằng đường dẫn ảnh nền của bạn */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+        }
+        .heart {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 280px;
+            height: 160px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            clip-path: path('M 140 20 C 200 -20, 280 60, 140 160 C 0 60, 80 -20, 140 20');
+        }
+        .image {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border-radius: 15px;
+            object-fit: cover;
+            animation: float 4s infinite ease-in-out alternate;
+        }
+        .image:nth-child(2) { top: 10%; left: 50%; transform: translateX(-50%); animation-delay: 0.2s; }
+        .image:nth-child(3) { top: 25%; left: 90%; transform: translate(-50%, -50%); animation-delay: 0.4s; }
+        .image:nth-child(4) { top: 50%; left: 100%; transform: translate(-50%, -50%); animation-delay: 0.6s; }
+        .image:nth-child(5) { top: 75%; left: 90%; transform: translate(-50%, -50%); animation-delay: 0.8s; }
+        .image:nth-child(6) { bottom: -8%; left: 50%; transform: translate(-50%, 0%); animation-delay: 1s; }
+        .image:nth-child(7) { top: 75%; left: 10%; transform: translate(-50%, -50%); animation-delay: 1.2s; }
+        .image:nth-child(8) { top: 50%; left: 0%; transform: translate(-50%, -50%); animation-delay: 1.4s; }
+        .image:nth-child(9) { top: 25%; left: 10%; transform: translate(-50%, -50%); animation-delay: 1.6s; }
+
+        @keyframes float {
+            0% { transform: translate(-50%, -50%) translateY(0px); }
+            100% { transform: translate(-50%, -50%) translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">I Love You</div>
+        <img src="anh1.jpg" class="image">
+        <img src="anh2.png" class="image">
+        <img src="anh8.jpg" class="image">
+        <img src="anh4.jpg" class="image">
+        <img src="anh5.jpg" class="image">
+        <img src="anh6.jpg" class="image">
+        <img src="anh7.jpg" class="image">
+        <img src="anh3.jpg" class="image">
+    </div>
+</body>
+</html>

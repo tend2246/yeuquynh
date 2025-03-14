@@ -6,9 +6,6 @@
     <title>Love Gallery</title>
     <style>
         body {
-            <audio controls autoplay>
-        <source src="nhac.mp3"type="audio/mp3">
-            </audio>
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,6 +61,11 @@
         @keyframes float {
             0% { transform: translate(-50%, -50%) translateY(0px); }
             100% { transform: translate(-50%, -50%) translateY(-10px); }
+        }
+        
+        @keyframes swing {
+            0% { transform: translate(-50%, -50%) rotate(-5deg); }
+            100% { transform: translate(-50%, -50%) rotate(5deg); }
         }
     </style>
 </head>
